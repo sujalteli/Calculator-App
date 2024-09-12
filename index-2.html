@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body-1">
+    <div class="container">
+      <main>
+        <div class="title title-1">
+          <h1>Calc</h1>
+          <div>
+            <div class="num num-1">
+              <p id="theme-one"><a href="index.html">1</a></p>
+              <p id="theme-two"><a href="#">2</a></p>
+              <p id="theme-three"><a href="index-3.html">3</a></p>
+            </div>
+            <div class="control">
+              <span>THEME</span>
+              <div class="toggle toggle-1">
+                <span class="circle-1 circle-2" style="opacity: 1">.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="calculator-screen calculator-screen-1">
+          <!-- <input type="text" name="calc" id="screen" readonly /> -->
+          <div class="display display-1">0</div>
+        </div>
+        <div class="calculator-body calculator-body-1">
+          <div class="btn">
+            <button
+              value="7"
+              class="number number-1"
+              onclick="appendNumber('7')"
+            >
+              7
+            </button>
+            <button
+              value="8"
+              class="number number-1"
+              onclick="appendNumber('8')"
+            >
+              8
+            </button>
+            <button
+              value="9"
+              class="number number-1"
+              onclick="appendNumber('9')"
+            >
+              9
+            </button>
+            <button
+              value="del"
+              class="delete-1 delete-2"
+              onclick="clearDisplay()"
+            >
+              DEL
+            </button>
+            <button
+              value="4"
+              class="number number-1"
+              onclick="appendNumber('4')"
+            >
+              4
+            </button>
+            <button
+              value="5"
+              class="number number-1"
+              onclick="appendNumber('5')"
+            >
+              5
+            </button>
+            <button
+              value="6"
+              class="number number-1"
+              onclick="appendNumber('6')"
+            >
+              6
+            </button>
+            <button
+              value="*"
+              class="operator number-1"
+              onclick="appendOperator('+')"
+            >
+              +
+            </button>
+            <button
+              value="1"
+              class="number number-1"
+              onclick="appendNumber('1')"
+            >
+              1
+            </button>
+            <button
+              value="2"
+              class="number number-1"
+              onclick="appendNumber('2')"
+            >
+              2
+            </button>
+            <button
+              value="3"
+              class="number number-1"
+              onclick="appendNumber('3')"
+            >
+              3
+            </button>
+            <button
+              value="-"
+              class="operator number-1"
+              onclick="appendOperator('-')"
+            >
+              -
+            </button>
+            <button
+              value="decimal"
+              class="operator number-1"
+              onclick="appendNumber('.')"
+            >
+              .
+            </button>
+            <button
+              value="0"
+              class="number number-1"
+              onclick="appendNumber('0')"
+            >
+              0
+            </button>
+            <button
+              value="/"
+              class="operator number-1"
+              onclick="appendOperator('/')"
+            >
+              /
+            </button>
+            <button
+              value="*"
+              class="operator number-1"
+              onclick="appendOperator('*')"
+            >
+              X
+            </button>
+            <button
+              class="reset-1 reset-2"
+              value="reset"
+              onclick="clearDisplay()"
+            >
+              RESET
+            </button>
+            <button class="equal equal-1" value="output" onclick="calculate()">
+              =
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="java.js"></script>
+  </body>
+</html>
